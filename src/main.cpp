@@ -13,8 +13,12 @@
 int main() {
 	std::cout << "Start of programs\n\n";
 
+	std::vector<std::string> myVec = string_to_array("some value");
 
-	std::cout << number_to_string(1+2) << std::endl;
+	for(const std::string &str : myVec)
+	{
+		std::cout << "" << str << ',';
+	}
 
 	std::cout << "\n\nEnd of program" << std::endl;
 	_getch();
