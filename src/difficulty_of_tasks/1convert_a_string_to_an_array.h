@@ -21,25 +21,33 @@
 
 std::vector<std::string> string_to_array(const std::string &str)
 {
-	if (str == "") return {""};
-
+	if (str.empty()) return {""};
 	std::vector<std::string> vecResult;
 	std::ostringstream outStr;
-	for (size_t i = 0; i < str.size()+1; i++)
+	size_t i=0;
+	while (i <= str.size())
 	{
-		if (str[i] == ' ' || str[i] == '\0')
+		while(str[i] != ' ' && i != str.size())
 		{
-			vecResult.push_back(outStr.str());
-			outStr.str("");
-			outStr.clear();
-			if (str[i] == '\0')
-				return vecResult;
-			continue;
+			outStr << str[i];
+			i++;
 		}
-		outStr << str[i];
+		vecResult.push_back(outStr.str());
+		outStr.str("");
+		outStr.clear();
+		i++;
 	}
 	return vecResult;
 
+}
+
+std::vector<std::string> string_to_array2(const std::string& s) {
+	std::vector<std::string> res;
+	std::stringstream ss(s + " ");
+	std::string word;
+
+  while (getline(ss, word, ' ')) res.push_back(word);
+  return res;
 }
 
 

@@ -11,7 +11,9 @@
 #include "1convert_a_Number_to_a_String.h"
 #include "1convert_a_String_to_a_Number.h"
 #include "1convert_a_string_to_an_array.h"
+#include "2range_bit_counting.h"
 #include "2shortest_word.h"
+#include "2string_ends_with.h"
 
 
 
