@@ -36,15 +36,14 @@ ui rangeBitCount(ui a, ui b)
 	return result;
 }
 
+#include <algorithm>
 
 #include <bitset>
-
-
 ui rangeBitCount2(ui a, ui b) {
-  ui sum{0};
-  for (ui i = a; i <= b; i++)
-	  sum += std::bitset<64>(i).count();
-  return sum;
+	ui sum{0};
+	for (ui i = a; i <= b; i++)
+		sum += std::bitset<32>(i).count();
+	return sum;
 }
 
 

@@ -14,6 +14,10 @@
 #include "2range_bit_counting.h"
 #include "2shortest_word.h"
 #include "2string_ends_with.h"
+#include "2valid_parentheses.h"
+#include "3create_phone_number.h"
+#include "3multiples_of_3_or_5.h"
+#include "3who_likes_it.h"
 
 
 
