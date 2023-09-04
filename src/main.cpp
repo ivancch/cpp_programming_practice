@@ -16,8 +16,10 @@
 int main() {
 	std::cout << "Start of programs\n\n";
 
-	int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-	std::cout << createPhoneNumber(arr) << std::endl;
+	std::cout << spinWords("Hey fellow warriors") << std::endl;
+//	std::cout << spinWords("This issss a test") << std::endl;
+//	std::cout << spinWords("CodeWars") << std::endl;
+//	std::cout << spinWords("Welcome") << std::endl;
 
 
 	std::cout << "\n\nEnd of program" << std::endl;

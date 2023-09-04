@@ -27,8 +27,25 @@ std::string createPhoneNumber(const int arr [10]){
 	return stream.str();
 }
 
+std::string createPhoneNumber2(const int digits[10]) {
+	std::string res = "(...) ...-....";
+	for (unsigned is = 0, id = 0; is < res.length(); is++)
+		if (res[is] == '.')
+			res[is] = '0' + digits[id++];
+	return res;
+}
 
+std::string createPhoneNumber3(const int arr [10]){
+	std::string number = "";
+	for (int i = 0; i < 10; i++)
+		number += std::to_string(arr[i]);
 
+	number.insert(0, "(");
+	number.insert(4, ") ");
+	number.insert(9, "-");
+
+	return number;
+}
 
 //using arr = int [10];
 //
