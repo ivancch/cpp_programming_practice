@@ -16,10 +16,11 @@
 int main() {
 	std::cout << "Start of programs\n\n";
 
-	std::cout << spinWords("Hey fellow warriors") << std::endl;
-	std::cout << spinWords("This issss a test") << std::endl;
-	std::cout << spinWords("CodeWars") << std::endl;
-	std::cout << spinWords("Welcome") << std::endl;
+	std::cout << findOdd({20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5}) << std::endl;
+	std::cout << findOdd({1,1,2,-2,5,2,4,4,-1,-2,5}) << std::endl;
+	std::cout << findOdd({20,1,1,2,2,3,3,5,5,4,20,4,5}) << std::endl;
+	std::cout << findOdd({10}) << std::endl;
+	std::cout << findOdd({1,1,1,1,1,1,10,1,1,1,1}) << std::endl;
 
 
 	std::cout << "\n\nEnd of program" << std::endl;
