@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <conio.h>
-#include "difficulty_of_tasks/myincludes1.h"
+#include "tasks/myincludes1.h"
 
 
 

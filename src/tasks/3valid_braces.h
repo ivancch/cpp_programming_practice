@@ -77,7 +77,7 @@ bool valid_braces2(const std::string &braces)
 
 bool valid_braces3(const std::string &braces)
 {
-	std::stack<char> s = {};
+	std::stack<char> s{};
 	for(const char &x : braces)
 		if(!s.empty() && ((x=='}' && s.top() == '{') ||
     				  	  (x==']' && s.top() == '[') ||
